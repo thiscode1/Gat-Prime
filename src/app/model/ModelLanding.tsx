@@ -45,7 +45,7 @@ export default function ModelLanding() {
           <img
             src="/hero-image.png"
             alt="Gat Prime"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-auto object-contain"
           />
           {/* Gradient מלמטה */}
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
