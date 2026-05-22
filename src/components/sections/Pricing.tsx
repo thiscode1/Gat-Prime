@@ -98,7 +98,8 @@ export default function Pricing() {
                   </div>
                   <button onClick={() => setSelected(pkg)}
                     className={`w-full justify-center text-base ${isPopular ? 'btn-primary' : 'btn-outline'}`}>
-                    {isPopular ? 'להזמנה עכשיו' : 'לקבלת מחיר היכרות'}
+                    {isPopular ? 'להזמנה עכשיו' : 'להזמנה עכשיו'}
+
                   </button>
                 </div>
               </div>
