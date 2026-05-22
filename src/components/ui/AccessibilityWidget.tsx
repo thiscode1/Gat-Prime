@@ -76,11 +76,9 @@ export default function AccessibilityWidget() {
         onClick={() => setOpen(!open)}
         aria-label="תפריט נגישות"
         title="נגישות"
-        className="fixed bottom-24 left-6 z-50 w-14 h-14 rounded-full
-                   bg-blue-600 hover:bg-blue-500 text-white text-2xl
-                   flex items-center justify-center
-                   shadow-[0_4px_20px_rgba(37,99,235,0.5)]
-                   hover:scale-110 transition-all duration-200"
+className="fixed bottom-24 left-6 z-50 w-8 h-8 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-sm flex items-center justify-center shadow-[0_4px_20px_rgba(37,99,235,0.5)] hover:scale-110 transition-all duration-200"
+
+
       >
         ♿
       </button>
