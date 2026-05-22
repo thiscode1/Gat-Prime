@@ -3,15 +3,16 @@ import './globals.css'
 import MetaPixel from '@/components/ui/MetaPixel'
 
 export const metadata: Metadata = {
-  title: 'Gat Prime | טיפות גת טבעיות — אנרגיה, ריכוז ושליטה',
-  description: 'טיפות גת פרמיום לתמיכה באנרגיה, ריכוז ושליטה בתיאבון. רכיבים טבעיים, שימוש נוח, משלוח לכל הארץ.',
-  keywords: 'טיפות גת, gat prime, טיפות טבעיות, אנרגיה טבעית, ריכוז, שליטה בתיאבון',
+  title: 'Gat Prime | פחות נשנושים. יותר שליטה בתיאבון.',
+  description: 'Gat Prime — טיפות גת טבעיות לתמיכה בשגרה מאוזנת. פחות חשק למתוקים, תחושת שובע טובה יותר ואנרגיה לאורך היום. משלוח חינם.',
+  keywords: 'טיפות גת, gat prime, שליטה בתיאבון, פחות נשנושים, טבעי, שגרה מאוזנת',
   openGraph: {
-    title: 'Gat Prime | טיפות גת טבעיות',
-    description: 'אנרגיה, ריכוז ושליטה בתיאבון בשגרה היומיומית.',
+    title: 'Gat Prime | פחות נשנושים. יותר שליטה.',
+    description: 'טיפות גת טבעיות לשגרה מאוזנת יותר. מחיר היכרות לזמן מוגבל.',
     type: 'website',
     locale: 'he_IL',
   },
+  robots: 'index, follow',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

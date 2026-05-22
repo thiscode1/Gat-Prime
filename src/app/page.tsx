@@ -8,10 +8,10 @@ import Hero from '@/components/sections/Hero'
 import TrustBar from '@/components/sections/TrustBar'
 import Problem from '@/components/sections/Problem'
 import Benefits from '@/components/sections/Benefits'
-import Trust from '@/components/sections/Trust'
+import WhyUs from '@/components/sections/WhyUs'
 import HowTo from '@/components/sections/HowTo'
 import Pricing from '@/components/sections/Pricing'
-import Reviews from '@/components/sections/Reviews'
+import SocialProof from '@/components/sections/SocialProof'
 import FAQ from '@/components/sections/FAQ'
 import FinalCTA from '@/components/sections/FinalCTA'
 
@@ -24,10 +24,10 @@ export default function Home() {
         <TrustBar />
         <Problem />
         <Benefits />
-        <Trust />
+        <WhyUs />
         <HowTo />
         <Pricing />
-        <Reviews />
+        <SocialProof />
         <FAQ />
         <FinalCTA />
       </main>
