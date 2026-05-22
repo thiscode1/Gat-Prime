@@ -42,11 +42,7 @@ export default function ModelLanding() {
 
       {/* ===== תמונה מלאה ===== */}
       <section className="relative">
-        <img
-          src="/hero-image.png"
-          alt="Gat Prime — פחות נשנושים יותר שליטה"
-          className="w-full h-auto block"
-        />
+     
         {/* gradient תחתון */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
       </section>
