@@ -7,11 +7,10 @@ export default function Problem() {
           <div className="relative z-10">
             <span className="text-4xl mb-6 block">😮‍💨</span>
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-5">
-              מרגישים נפילות אנרגיה, חשק למתוק וקושי להתרכז?
+              מתחילים לקחת שליטה על התיאבון.
             </h2>
             <p className="text-white/60 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-              Gat Prime נוצר כדי לתת פתרון טבעי, נוח ויומיומי לאנשים שרוצים
-              להרגיש יותר בשליטה במהלך היום — בלי תוספים מלאכותיים ובלי סיבוכים.
+             טיפות גת טבעיות המסייעות לתחושת שובע ותומכות באנשים שמנסים להפחית נשנושים, מתוקים ואכילה מיותרת במהלך היום..
             </p>
             <a href="#pricing" className="btn-primary inline-flex">
               גלו איך זה עובד →

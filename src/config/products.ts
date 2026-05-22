@@ -12,7 +12,7 @@ export const PACKAGES = [
     price: 350,
     priceUSD: 95,
     badge: null as string | null,
-    description: 'הכר את המוצר ותחוש את ההבדל',
+    description: 'הכר את המוצר ותחוש את ההבדל — כולל משלוח חינם',
     paypalDescription: 'Gat Prime Drops x1',
   },
   {
@@ -22,7 +22,7 @@ export const PACKAGES = [
     price: 600,
     priceUSD: 163,
     badge: 'הכי משתלם' as string | null,
-    description: 'שמרו על שגרה עקבית לאורך זמן',
+    description: 'שמרו על שגרה עקבית לאורך זמן — כולל משלוח חינם',
     paypalDescription: 'Gat Prime Drops x2',
   },
   {
@@ -32,7 +32,7 @@ export const PACKAGES = [
     price: 900,
     priceUSD: 245,
     badge: null as string | null,
-    description: 'חסכו יותר, תרגישו יותר',
+    description: 'חסכו יותר, תרגישו יותר — כולל משלוח חינם',
     paypalDescription: 'Gat Prime Drops x3',
   },
 ]
