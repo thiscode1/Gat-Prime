@@ -40,33 +40,55 @@ export default function ModelLanding() {
         </div>
       </div>
 
-      {/* ===== תמונה מלאה ===== */}
-      <section className="relative">
-     
-        {/* gradient תחתון */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
-      </section>
+      {/* ===== תמונה עם טקסט מעל ===== */}
+      <section className="relative" style={{height:'100vh',maxHeight:'750px'}}>
+        <img
+          src="/hero-image.png"
+          alt="Gat Prime"
+          className="w-full h-full object-cover object-top"
+        />
+        {/* gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/50" />
 
-      {/* ===== CTA מיד אחרי התמונה ===== */}
-      <section className="px-5 pt-6 pb-8 bg-black">
-        <div className="max-w-lg mx-auto">
+        {/* טקסט */}
+        <div className="absolute bottom-10 right-0 left-0 px-6 text-center">
+          <div className="inline-flex items-center gap-2 mb-4"
+            style={{background:'rgba(0,0,0,0.55)',backdropFilter:'blur(8px)',borderRadius:'50px',padding:'6px 16px',border:'1px solid rgba(255,255,255,0.1)'}}>
+            <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+            <span className="text-green-300 text-xs font-semibold">מחיר היכרות לזמן מוגבל</span>
+          </div>
+
+          <h1 className="text-white font-black text-4xl leading-tight mb-1">פחות נשנושים.</h1>
+          <h1 className="font-black text-4xl leading-tight mb-4"
+            style={{background:'linear-gradient(135deg,#d4af37,#fbbf24)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent'}}>
+            יותר שליטה.
+          </h1>
+
+          <p className="text-white/65 text-sm mb-6 leading-relaxed max-w-xs mx-auto">
+            "האמת? בעיקר רציתי פחות נשנושים במהלך היום... קיבלתי הרבה יותר מזה."
+          </p>
+
           <button onClick={() => setSelected(promoPackage)}
-            className="w-full py-5 rounded-2xl font-black text-xl text-black mb-3"
-            style={{background:'linear-gradient(135deg,#92400e,#d97706,#fbbf24)',boxShadow:'0 4px 24px rgba(251,191,36,0.4)'}}>
+            className="w-full max-w-xs mx-auto py-4 rounded-2xl font-black text-lg text-black block"
+            style={{background:'linear-gradient(135deg,#d97706,#fbbf24)',boxShadow:'0 4px 24px rgba(251,191,36,0.4)'}}>
             🔥 לקבלת מחיר היכרות — ₪{PROMO.price}
           </button>
-          <div className="flex justify-center gap-5 text-white/35 text-xs">
-            {['🔒 מאובטח','🚚 משלוח חינם','💬 שירות אישי'].map(t => (
-              <span key={t}>{t}</span>
-            ))}
-          </div>
+        </div>
+      </section>
+
+      {/* ===== trust ===== */}
+      <section className="px-5 py-5 bg-black">
+        <div className="flex justify-center gap-5 text-white/35 text-xs">
+          {['🔒 מאובטח','🚚 משלוח חינם','💬 שירות אישי'].map(t => (
+            <span key={t}>{t}</span>
+          ))}
         </div>
       </section>
 
       {/* ===== ביקורות ===== */}
-      <section className="px-5 py-10 bg-black">
+      <section className="px-5 py-8 bg-black">
         <div className="max-w-lg mx-auto">
-          <div className="text-center mb-6">
+          <div className="text-center mb-5">
             <div className="inline-flex items-center gap-2 text-white/40 text-sm">
               <span className="flex gap-0.5">{[...Array(5)].map((_,i) => <span key={i} className="text-yellow-400">★</span>)}</span>
               מאות לקוחות מרוצים
@@ -101,7 +123,6 @@ export default function ModelLanding() {
           <h2 className="text-center text-white font-black text-2xl mb-2">בחרו חבילה</h2>
           <p className="text-center text-white/40 text-sm mb-6">משלוח חינם לכל הזמנה</p>
 
-          {/* Promo */}
           <div className="rounded-2xl p-5 mb-4 relative overflow-hidden"
             style={{background:'linear-gradient(135deg,rgba(146,64,14,0.3),rgba(217,119,6,0.15))',border:'1.5px solid rgba(251,191,36,0.4)'}}>
             <div className="absolute top-3 left-3 bg-yellow-400 text-black text-xs font-black px-2 py-0.5 rounded-full">לזמן מוגבל</div>
