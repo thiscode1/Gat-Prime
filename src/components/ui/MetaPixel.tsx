@@ -2,14 +2,9 @@
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 
-// ====================================================
-// Meta Pixel — הכניסו את ה-Pixel ID שלכם ב-.env.local
-// NEXT_PUBLIC_META_PIXEL_ID=your-pixel-id-here
-// ====================================================
-
 declare global {
   interface Window {
-    fbq: (...args: any[]) => void
+    fbq: any
     _fbq: any
   }
 }
@@ -17,11 +12,12 @@ declare global {
 export function initPixel() {
   const pixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID
   if (!pixelId || typeof window === 'undefined') return
-  if (window.fbq) return
+  if (typeof window.fbq !== 'undefined') return
 
-  const n: any = window.fbq = function() {
+  const n: any = function() {
     n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
   }
+  window.fbq = n
   if (!window._fbq) window._fbq = n
   n.push = n
   n.loaded = true
@@ -36,7 +32,6 @@ export function initPixel() {
   window.fbq('init', pixelId)
 }
 
-// Events — קראו לפונקציות האלה מהקומפוננטים
 export const pixel = {
   pageView: () => window.fbq?.('track', 'PageView'),
   viewContent: (name: string, value: number) =>
