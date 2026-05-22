@@ -5,7 +5,7 @@ import { formatPrice } from '@/lib/utils'
 import OrderModal from '@/components/ui/OrderModal'
 
 export default function Pricing() {
-  const [selected, setSelected] = useState<typeof PACKAGES[0] | typeof PROMO | null>(null)
+  const [selected, setSelected] = useState<any>(null)
 
   const promoPackage = PROMO.active ? {
     id: PROMO.id,
