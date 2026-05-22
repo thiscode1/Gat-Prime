@@ -12,13 +12,8 @@ const REVIEWS = [
 
 export default function ModelLanding() {
   const [selected, setSelected] = useState<any>(null)
-  const [showSticky, setShowSticky] = useState(false)
+const [showSticky, setShowSticky] = useState(true)
 
-  useEffect(() => {
-    const fn = () => setShowSticky(window.scrollY > 200)
-    window.addEventListener('scroll', fn, { passive: true })
-    return () => window.removeEventListener('scroll', fn)
-  }, [])
 
   const waUrl = buildWhatsAppUrl(WHATSAPP_NUMBER, 'היי, ראיתי את המודעה ואני רוצה לקבל מחיר היכרות על טיפות גת פריים')
 
