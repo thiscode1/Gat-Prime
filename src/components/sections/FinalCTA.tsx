@@ -10,8 +10,7 @@ export default function FinalCTA() {
             רוצים להתחיל היום?
           </h2>
           <p className="text-white/55 text-lg leading-relaxed mb-8">
-            בחרו חבילה, שלמו בצורה מאובטחת דרך PayPal
-            ונחזור אליכם להשלמת המשלוח.
+           בחרו חבילה ונחזור אליכם להשלמת המשלוח.
           </p>
           <a href="#pricing" className="btn-gold text-lg">
             🛒 להזמנה עכשיו

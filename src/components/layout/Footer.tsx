@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { SITE_CONFIG, WHATSAPP_NUMBER } from '@/config/products'
 import { buildWhatsAppUrl } from '@/lib/utils'
 
@@ -20,37 +21,32 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Links */}
+          {/* Nav */}
           <div>
-            <h4 className="text-white/70 font-semibold text-sm mb-4">מידע</h4>
+            <h4 className="text-white/70 font-semibold text-sm mb-4">ניווט</h4>
             <div className="space-y-2">
-              {[
-                ['#hero', 'בית'],
-                ['#benefits', 'יתרונות'],
-                ['#pricing', 'מחיר'],
-                ['#faq', 'שאלות נפוצות'],
-              ].map(([h, l]) => (
+              {[['#hero','בית'],['#benefits','יתרונות'],['#pricing','מחיר'],['#faq','שאלות נפוצות']].map(([h,l]) => (
                 <div key={h}>
                   <a href={h} className="text-white/40 hover:text-white transition-colors text-sm">{l}</a>
                 </div>
               ))}
+              <div>
+                <a href={waUrl} target="_blank" rel="noreferrer"
+                  className="text-white/40 hover:text-white transition-colors text-sm">
+                  יצירת קשר
+                </a>
+              </div>
             </div>
           </div>
 
           {/* Legal */}
           <div>
             <h4 className="text-white/70 font-semibold text-sm mb-4">מדיניות</h4>
-            <div className="space-y-2 text-sm text-white/40">
-              <div>תקנון האתר</div>
-              <div>מדיניות פרטיות</div>
-              <div>מדיניות משלוחים</div>
-              <div>מדיניות החזרות</div>
-              <div>
-                <a href={waUrl} target="_blank" rel="noreferrer"
-                  className="hover:text-white transition-colors">
-                  יצירת קשר
-                </a>
-              </div>
+            <div className="space-y-2">
+              <div><Link href="/takanon" className="text-white/40 hover:text-white transition-colors text-sm">תקנון האתר</Link></div>
+              <div><Link href="/privacy" className="text-white/40 hover:text-white transition-colors text-sm">מדיניות פרטיות</Link></div>
+              <div><Link href="/shipping" className="text-white/40 hover:text-white transition-colors text-sm">מדיניות משלוחים</Link></div>
+              <div><Link href="/returns" className="text-white/40 hover:text-white transition-colors text-sm">מדיניות החזרות</Link></div>
             </div>
           </div>
         </div>
