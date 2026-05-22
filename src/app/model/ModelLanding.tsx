@@ -52,12 +52,7 @@ export default function ModelLanding() {
 
         {/* טקסט */}
         <div className="absolute bottom-10 right-0 left-0 px-6 text-center">
-                    <button onClick={() => setSelected(promoPackage)}
-            className="w-full max-w-xs mx-auto py-4 rounded-2xl font-black text-lg text-black block"
-            style={{background:'linear-gradient(135deg,#d97706,#fbbf24)',boxShadow:'0 4px 24px rgba(251,191,36,0.4)'}}>
-            🔥 לקבלת מחיר היכרות — ₪{PROMO.price}
-          </button>
-        </div>
+                            </div>
       </section>
 
       {/* ===== trust ===== */}
