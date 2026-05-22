@@ -2,9 +2,11 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat'
 import AccessibilityWidget from '@/components/ui/AccessibilityWidget'
+import StickyMobileCTA from '@/components/ui/StickyMobileCTA'
 import Hero from '@/components/sections/Hero'
 import Problem from '@/components/sections/Problem'
 import Benefits from '@/components/sections/Benefits'
+import Trust from '@/components/sections/Trust'
 import HowTo from '@/components/sections/HowTo'
 import Pricing from '@/components/sections/Pricing'
 import Reviews from '@/components/sections/Reviews'
@@ -19,6 +21,7 @@ export default function Home() {
         <Hero />
         <Problem />
         <Benefits />
+        <Trust />
         <HowTo />
         <Pricing />
         <Reviews />
@@ -28,6 +31,7 @@ export default function Home() {
       <Footer />
       <WhatsAppFloat />
       <AccessibilityWidget />
+      <StickyMobileCTA />
     </>
   )
 }
