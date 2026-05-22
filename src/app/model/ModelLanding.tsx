@@ -150,7 +150,7 @@ const [showSticky, setShowSticky] = useState(true)
 
       {/* ===== Sticky bar ===== */}
       <div className={`fixed bottom-0 left-0 right-0 z-50 transition-all duration-500
-                      ${showSticky ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
+                      translate-y-0 opacity-100`}>
         <div className="px-4 py-3 flex items-center gap-3"
           style={{background:'rgba(0,0,0,0.92)',backdropFilter:'blur(16px)',borderTop:'1px solid rgba(255,255,255,0.1)'}}>
           <div>
