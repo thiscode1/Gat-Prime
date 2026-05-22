@@ -43,7 +43,7 @@ export default function ModelLanding() {
         {/* תמונת הדוגמנית — מלאה */}
         <div className="absolute inset-0">
           <img
-            src="/hero-model.png"
+            src="/hero-image.png"
             alt="Gat Prime"
             className="w-full h-full object-cover object-top"
           />
