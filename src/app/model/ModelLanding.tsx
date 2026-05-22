@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { WHATSAPP_NUMBER, PACKAGES, PROMO } from '@/config/products'
 import { buildWhatsAppUrl, formatPrice } from '@/lib/utils'
 import OrderModal from '@/components/ui/OrderModal'
+import AccessibilityWidget from '@/components/ui/AccessibilityWidget'
 
 const REVIEWS = [
   { name: 'מיכל ר.', text: 'אני לא אשקר... בעיקר רציתי פחות נשנושים וזה בדיוק מה שקיבלתי.', stars: 5 },
@@ -166,6 +167,8 @@ const [showSticky, setShowSticky] = useState(true)
       </div>
 
       {selected && <OrderModal package={selected} onClose={() => setSelected(null)} />}
+<AccessibilityWidget />
+
     </div>
   )
 }
