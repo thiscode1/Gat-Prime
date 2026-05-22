@@ -3,7 +3,9 @@ import Footer from '@/components/layout/Footer'
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat'
 import AccessibilityWidget from '@/components/ui/AccessibilityWidget'
 import StickyMobileCTA from '@/components/ui/StickyMobileCTA'
+import ExitIntent from '@/components/ui/ExitIntent'
 import Hero from '@/components/sections/Hero'
+import TrustBar from '@/components/sections/TrustBar'
 import Problem from '@/components/sections/Problem'
 import Benefits from '@/components/sections/Benefits'
 import Trust from '@/components/sections/Trust'
@@ -19,6 +21,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <TrustBar />
         <Problem />
         <Benefits />
         <Trust />
@@ -32,6 +35,7 @@ export default function Home() {
       <WhatsAppFloat />
       <AccessibilityWidget />
       <StickyMobileCTA />
+      <ExitIntent />
     </>
   )
 }
