@@ -30,16 +30,16 @@ export default function OrderModal({ package: pkg, onClose }: Props) {
   const handleOrder = () => {
     if (!validate()) return
 
-    const message = `היי! אני רוצה להזמין מ-Gat Prime 🌿
+ const message = `היי! אני רוצה להזמין מ-Gat Prime
 
-📦 חבילה: ${pkg.name}
-💰 מחיר: ${formatPrice(pkg.price)}
+חבילה: ${pkg.name}
+מחיר: ${formatPrice(pkg.price)}
 
-👤 שם: ${form.name}
-📞 טלפון: ${form.phone}
-🏙️ עיר: ${form.city}
-🏠 כתובת: ${form.address}
-${form.notes ? `📝 הערות: ${form.notes}` : ''}
+שם: ${form.name}
+טלפון: ${form.phone}
+עיר: ${form.city}
+כתובת: ${form.address}
+${form.notes ? `הערות: ${form.notes}` : ''}
 
 אשמח להמשך טיפול, תודה!`
 
