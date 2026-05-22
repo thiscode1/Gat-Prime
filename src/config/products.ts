@@ -2,7 +2,7 @@
 // שנו כאן מחירים, חבילות ותוכן — בקלות!
 // =============================================
 
-export const WHATSAPP_NUMBER = '972552978965' // ← שנו למספר שלכם
+export const WHATSAPP_NUMBER = '972545549361' // ← שנו למספר שלכם
 
 export const PACKAGES = [
   {
