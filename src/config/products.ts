@@ -54,3 +54,4 @@ export const SITE_CONFIG = {
   email: 'info@gatprime.co.il',
   phone: '+972-50-0000000',
 }
+ 
