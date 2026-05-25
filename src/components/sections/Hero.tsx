@@ -135,8 +135,8 @@ export default function Hero() {
                     <div className="text-forest-300 text-xs">טיפות גת טבעיות</div>
                   </div>
                   <div className="mr-auto">
-                    <div className="text-white/40 text-xs line-through">₪350</div>
-                    <div className="text-yellow-400 font-black text-xl leading-tight">₪300</div>
+                    <div className="text-white/40 text-xs line-through">₪400</div>
+                    <div className="text-yellow-400 font-black text-xl leading-tight">₪350</div>
                   </div>
                 </div>
               </div>
